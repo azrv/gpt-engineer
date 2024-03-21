@@ -282,7 +282,8 @@ class FileSelector:
         # Ensure that at least one file is selected, or raise an exception
         if not selected_files:
             raise Exception(
-                "No files were selected. Please select at least one file to proceed."
+                "No files were selected. Please select at least one file to proceed.\n"
+                "Have you tried selecting files in `file_selection.toml`?"
             )
 
         print(f"\nYou have selected the following files:\n{input_path}")
